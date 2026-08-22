@@ -25,15 +25,22 @@ Each subfolder listed below is a **React Vite project** (except where noted) tha
 
 ---
 
-## Module 01: React Setup
+**Updated Module 01: React Setup**  
 
 | Subfolder | Description |
 |-----------|-------------|
+| `001-older-way-by-nodejs-team-create-react-project_By_hand_manual` | **Manual React Setup (Older Way)** – Create a React project from scratch: install React, ReactDOM, Babel, Webpack manually; configure `webpack.config.js`, `.babelrc`; understand the underlying tooling. |
+| `002-official-way-by-react-js-team-using-npm-npx` | **Create React App (Official Way)** – Use `npx create-react-app` to bootstrap a project; explore CRA structure, scripts, and default configuration. |
+| `003-latest-way-by-vite-team-using-npm-vite` | **Vite Setup (Latest Way)** – Use `npm create vite@latest` to set up a React project with Vite; understand the speed benefits and modern configuration. |
 | `01-01-vite-setup` | Creating a Vite project, folder structure, `main.jsx`, `App.jsx`, dev server. |
 | `01-02-jsx-basics` | JSX syntax, embedding expressions, attributes, self-closing tags, comments. |
 | `01-03-components-intro` | Functional components, importing/exporting components, rendering. |
 | `01-04-reactdom-render` | `ReactDOM.createRoot`, `render`, `StrictMode`, mounting. |
 | `01-05-project-structure` | Organizing files, components folder, assets, public folder. |
+
+---
+
+This now includes the three historical/setup approaches at the top, ensuring learners understand the evolution and different ways to start a React project.
 
 ---
 
