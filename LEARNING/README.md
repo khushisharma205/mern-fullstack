@@ -44,35 +44,54 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 
 ---
 
-## Module 02: React Fundamentals
+**Updated Module 02: React Fundamentals**  
 
 | Subfolder | Description |
 |-----------|-------------|
-| `02-01-functional-components` | Deep dive into functional components, props, default props. |
-| `02-02-state-basics` | `useState` hook, updating state, batching behavior, functional updates. |
-| `02-03-rendering-lists` | Rendering arrays with `.map()`, importance of keys. |
-| `02-04-conditional-rendering` | `if`/`else`, ternary, logical `&&`, conditional components. |
-| `02-05-fragments` | `React.Fragment`, shorthand `<>`, avoiding extra DOM nodes. |
-| `02-06-composition` | `props.children`, composition vs inheritance, slots pattern. |
-| `02-07-props-validation` | PropTypes, defaultProps, type checking. |
+| `02-00-jsx` | Deep dive into JSX rendering, JS expressions, conditional rendering, attributes, arrays, `.map()`, lists. |
+| `02-01-components-rendering` | Rendering React components, component tree, root component, importing/exporting components. |
+| `02-02-props-to-component` | Passing data to components via props, destructuring props, prop types basics. |
+| `02-03-use-state-hook` | Introduction to `useState` hook, initializing and updating local state. |
+| `02-04-value-child-cmpnt-fun-var-pass-as-props` | Passing values, child components, functions, and variables as props; callback props. |
+| `02-05-conditional-rendering` | Conditional rendering with `if`/`else`, ternary operators, logical `&&`, returning `null`. |
+| `02-06-functional-components` | Deep dive into functional components, default props, props.children. |
+| `02-07-state-basics` | `useState` in depth: batching behavior, functional updates, object/array state. |
+| `02-08-rendering-lists` | Rendering arrays with `.map()`, importance of keys, filtering/sorting lists. |
+| `02-09-fragments` | `React.Fragment`, shorthand `<>`, avoiding extra DOM nodes. |
+| `02-10-composition` | `props.children`, composition vs inheritance, slots pattern. |
+| `02-11-props-validation` | PropTypes, defaultProps, type checking for props. |
 
 ---
 
-## Module 03: Events & DOM
+This structure now includes the additional topics as separate subfolders, providing a more granular progression from JSX fundamentals to props, state, and rendering concepts.
+
+---
+
+**Updated Module 03: Events & DOM**  
+*(Expanded with additional subfolders for deeper coverage)*
 
 | Subfolder | Description |
 |-----------|-------------|
-| `03-01-event-handling` | Synthetic events, `onClick`, `onChange`, event object. |
+| `03-01-event-handling` | Synthetic events, `onClick`, `onChange`, event object basics. |
 | `03-02-event-binding` | Arrow functions in render, binding in class components (brief). |
 | `03-03-passing-arguments` | Passing parameters to event handlers. |
 | `03-04-form-events` | `onSubmit`, `onChange`, controlled vs uncontrolled inputs. |
 | `03-05-keyboard-mouse-events` | `onKeyDown`, `onKeyUp`, `onMouseEnter`, `onMouseLeave`. |
 | `03-06-refs-basics` | `useRef` for DOM access, reading values, focusing elements. |
 | `03-07-uncontrolled-components` | Using refs to read form values on submit. |
+| `03-08-event-propagation` | Event bubbling, capturing, `stopPropagation`, `preventDefault`, event delegation. |
+| `03-09-event-object-deep-dive` | SyntheticEvent properties, `target` vs `currentTarget`, event pooling (legacy), `persist()`. |
+| `03-10-keyboard-event-handler` | Advanced keyboard events: key combinations, `key` vs `keyCode`, global keyboard shortcuts. |
+| `03-11-dom-manipulation-useref` | Advanced `useRef` for DOM manipulation: measuring elements, managing focus, timers, imperative APIs. |
 
 ---
 
-## Module 04: Components & Lifecycle
+This expansion provides a more granular progression from basic event handling to advanced topics like propagation, event object internals, and extensive DOM manipulation with refs.
+
+---
+
+**Updated Module 04: Components & Lifecycle**  
+*(Original topics plus added subfolders for class-based CRUD, functional lifecycle, and performance optimizations mimicking shouldComponentUpdate)*
 
 | Subfolder | Description |
 |-----------|-------------|
@@ -83,39 +102,77 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 | `04-05-error-boundaries` | Class-based error boundary component, catching errors. |
 | `04-06-higher-order-components` | HOC pattern, enhancing components. |
 | `04-07-render-props` | Render prop pattern, sharing logic. |
+| `04-08-class-components-crud-app` | **Class Component CRUD App** – Build a complete Task Manager app using class components, state, lifecycle methods, and forms. |
+| `04-09-functional-components-lifecycle` | **Functional Lifecycle Deep Dive** – Explore mount and update phases in functional components using `useEffect` and `useLayoutEffect` with various dependency arrays. |
+| `04-10-useeffect-did-mount-update` | **useEffect as componentDidMount & componentDidUpdate** – Simulate class lifecycle methods with `useEffect` dependency arrays, including infinite loop pitfalls. |
+| `04-11-component-should-update-usememo` | **useMemo for shouldComponentUpdate** – Use `useMemo` to memoize computed values and prevent unnecessary recalculations, optimizing render performance. |
+| `04-12-component-should-update-usecallback` | **useCallback for shouldComponentUpdate** – Use `useCallback` to stabilize function references and prevent unnecessary child re-renders, akin to shouldComponentUpdate. |
 
 ---
 
-## Module 05: Hooks
-
-| Subfolder | Description |
-|-----------|-------------|
-| `05-01-usestate-deep-dive` | Lazy initialization, functional updates, object state, multiple states. |
-| `05-02-useeffect-deep-dive` | Dependency arrays, infinite loops, fetching data, cleanup. |
-| `05-03-usecontext` | Context API with `useContext`, provider, consumer. |
-| `05-04-usereducer` | Reducer pattern, dispatch actions, complex state logic. |
-| `05-05-usecallback-usememo` | Memoizing functions and values, performance optimization. |
-| `05-06-useref-deep-dive` | Mutable ref, storing previous values, `forwardRef`. |
-| `05-07-custom-hooks` | Creating reusable hooks, sharing logic across components. |
-| `05-08-rules-of-hooks` | Rules, ESLint plugin, conditional hooks pitfalls. |
-| `05-09-uselayouteffect` | Synchronous effect, difference from `useEffect`. |
-| `05-10-useimperativehandle` | Exposing imperative methods, `forwardRef`. |
-| `05-11-usedebugvalue` | Debugging custom hooks in React DevTools. |
+This expanded module covers both class and functional component lifecycles, plus practical patterns for optimizing component updates with memoization hooks.
 
 ---
 
-## Module 06: Advanced State
+**Updated Module 05: Hooks (Real-World Focused)**  
+*(Filtered to include only hooks that are commonly used in production React applications)*
 
 | Subfolder | Description |
 |-----------|-------------|
-| `06-01-lifting-state` | Lifting state up, shared state between siblings. |
-| `06-02-context-reducer-pattern` | Combining `useReducer` and Context for global state. |
-| `06-03-state-normalization` | Normalizing nested data structures, using IDs. |
-| `06-04-immutable-updates` | Immutable update patterns for objects and arrays. |
-| `06-05-immer-integration` | Using Immer for simpler immutable updates. |
-| `06-06-url-state` | Using URL search params as state, `useSearchParams`. |
-| `06-07-server-state-intro` | Introduction to server state vs client state, React Query basics. |
-| `06-08-state-machines` | XState introduction, finite state machines. |
+| `05-01-usestate-deep-dive` | The core state hook — lazy init, functional updates, object/array state. |
+| `05-02-useeffect-deep-dive` | Side effects, data fetching, subscriptions, cleanup, dependency arrays. |
+| `05-03-usecontext` | Consume context values; avoid prop drilling in real apps. |
+| `05-04-usereducer` | Manage complex state transitions with actions (e.g., forms, carts). |
+| `05-05-usememo-usecallback` | Prevent expensive recalculations and stabilize function references. |
+| `05-06-useref-deep-dive` | Access DOM nodes, keep mutable values, store previous values. |
+| `05-07-uselayouteffect` | Run effects synchronously after DOM mutations; measure layout, avoid flicker. |
+| `05-08-useimperativehandle` | Expose imperative methods from child components (e.g., focus, scroll). |
+| `05-09-useid` | Generate stable unique IDs for form inputs and accessibility attributes. |
+| `05-10-usetransition` | Mark non-urgent updates to keep UI responsive during heavy rendering. |
+| `05-11-usedeferredvalue` | Defer rendering of a value (e.g., search results) to keep inputs fast. |
+| `05-12-usesyncexternalstore` | Subscribe to external stores (Redux, Zustand, browser APIs) safely. |
+| `05-13-rules-of-hooks` | Understand and enforce hook rules to avoid bugs. |
+| `05-14-custom-hooks-intro` | Build reusable hooks; share logic across components. |
+| `05-15-use-previous` | Track the previous value of state or props (useful in effects). |
+| `05-16-use-local-storage` | Persist state to `localStorage` and sync across tabs. |
+| `05-17-use-debounce-throttle` | Limit how often a function runs (search inputs, scroll handlers). |
+| `05-18-use-on-click-outside` | Detect clicks outside an element — close modals, dropdowns, popovers. |
+| `05-19-use-event-listener` | Attach and clean up event listeners declaratively. |
+| `05-20-use-media-query` | Respond to CSS media queries in JavaScript for responsive layouts. |
+| `05-21-use-window-size` | Track viewport width/height for responsive components. |
+| `05-22-use-fetch` | Simple data fetching with loading, error, and cancellation. |
+| `05-23-use-form` | Manage form state, validation, and submission easily. |
+| `05-24-use-toggle` | Simple boolean state toggling (show/hide, open/close). |
+| `05-25-use-interval-timeout` | Declarative timers that clean up automatically. |
+| `05-26-use-hover` | Track hover state of an element (tooltips, effects). |
+| `05-27-use-document-title` | Update the browser tab title dynamically. |
+
+---
+
+**Removed hooks (rarely used in production):**  
+- `useDebugValue` — only for custom hook library authors during development.  
+- `useInsertionEffect` — extremely niche; intended only for CSS-in-JS library internals.  
+- `useHistory` (custom undo/redo) — too specific; not generally needed in typical apps.
+
+This list focuses on hooks you will actually encounter and use in day-to-day React development, ensuring every topic is practical and immediately applicable.
+
+---
+
+**Updated Module 06: Advanced State**  
+*(Renamed folder slugs and descriptions to be more meaningful, simple, and reflect real-world usage)*
+
+| Subfolder | Description |
+|-----------|-------------|
+| `06-01-shared-state-lifting-up` | **Lifting State Up** – Share state between sibling components by moving it to their common parent (real use: synced inputs, cart count). |
+| `06-02-global-state-context-reducer` | **Context + useReducer for Global State** – Combine Context API and reducer to manage app-wide state (real use: theme, user, cart). |
+| `06-03-normalizing-state-data` | **State Normalization** – Store data in flat structures keyed by ID to avoid duplication and simplify updates (real use: lists of entities like posts, users). |
+| `06-04-immutable-update-patterns` | **Immutable Updates for Objects & Arrays** – Safely update nested state using spread, map, filter without mutating (real use: adding/removing items in arrays). |
+| `06-05-immer-simplify-immutability` | **Immer for Simpler Immutable Updates** – Use the Immer library to write mutating-like syntax while producing immutable updates (real use: complex nested state). |
+| `06-06-url-state-search-params` | **URL Search Params as State** – Use `useSearchParams` to read/write query parameters; share state via URL (real use: filters, pagination, shareable links). |
+| `06-07-server-state-react-query` | **Server State with React Query** – Fetch, cache, and synchronize server data; handle loading/error/mutations (real use: API data that changes on server). |
+| `06-08-state-machines-xstate` | **Finite State Machines with XState** – Model complex UI states with explicit transitions (real use: multi-step forms, onboarding, complex UI flows). |
+
+Now every folder name clearly states its purpose, making it easier to understand what real-world problem it solves.
 
 ---
 
@@ -125,7 +182,7 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 |-----------|-------------|
 | `07-01-controlled-forms` | Controlled inputs, text, select, checkbox, radio. |
 | `07-02-uncontrolled-forms` | Uncontrolled inputs, `defaultValue`, refs. |
-| `07-03-form-validation` | Manual validation, error messages, validation on submit. |
+| `07-03-form-validation` | Manual validation, error messages, validation on submit. ,joi |
 | `07-04-react-hook-form` | Using React Hook Form library. |
 | `07-05-formik` | Using Formik library. |
 | `07-06-custom-form-hooks` | Building a custom `useForm` hook. |
@@ -150,7 +207,8 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 
 ---
 
-## Module 09: React Router
+**Updated Module 09: React Router**  
+*(Expanded with additional focused subfolders covering all key routing concepts)*
 
 | Subfolder | Description |
 |-----------|-------------|
@@ -163,35 +221,60 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 | `09-07-lazy-loading-routes` | Code splitting with `React.lazy`, `Suspense`. |
 | `09-08-404-handling` | Catch-all route, custom 404 page. |
 | `09-09-route-transitions` | Animating route changes with Framer Motion. |
+| `09-10-react-router-dom-anchor-vs-create-browser-router` | Compare `<a>` tags vs `createBrowserRouter` and `RouterProvider`; understand full router setup. |
+| `09-11-react-router-link` | Deep dive into `Link` component: internal navigation, state passing, replacement behavior. |
+| `09-12-react-router-navlink` | `NavLink` for active styles, `className` function, `end` prop for exact matching. |
+| `09-13-react-router-useparam-route-parameter` | Using `useParams` to read dynamic route parameters; multiple params, nested params. |
+| `09-14-react-router-uselocation-query-parameter` | Using `useLocation` to read query strings; parsing with `URLSearchParams`. |
+| `09-15-react-router-usenavigate` | Programmatic navigation with `useNavigate`; redirects, history stack, `replace`. |
+| `09-16-react-nested-router-outlet-to-child-route-renders-in-parent` | Nested routes with `Outlet`; rendering child routes inside parent layout; index routes. |
+| `09-17-react-router-not-found-route` | Dedicated 404 route with `path="*"`; custom not-found component; nested 404s. |
+| `09-18-form-handling-with-route` | Submitting forms and navigating based on results; combining form actions with routing. |
+| `09-19-react-router-browser-router` | Deep dive into `BrowserRouter` configuration, basename, history, and server requirements. |
+
+This comprehensive module now covers every fundamental and advanced React Router concept with dedicated hands-on projects, ensuring no topic is missed.
 
 ---
 
-## Module 10: Authentication & Authorization
+**Updated Module 10: Authentication & Authorization (Simplified)**  
+*(Rewritten with simple, clear folder names and descriptions for real-world use)*
 
 | Subfolder | Description |
 |-----------|-------------|
-| `10-01-jwt-auth` | Login, storing JWT, sending Authorization header. |
-| `10-02-protected-routes` | Route guards, redirect on unauthorized. |
-| `10-03-role-based-access` | User roles, permissions, conditional rendering. |
-| `10-04-refresh-tokens` | Token refresh flow, axios interceptors. |
-| `10-05-oauth-social-login` | Google/GitHub OAuth flow (frontend part). |
-| `10-06-password-reset` | Password reset flow, email link, new password form. |
-| `10-07-auth-context` | AuthProvider, `useAuth` hook, context for user session. |
+| `10-01-login-jwt` | User logs in, gets a token, and we send it with every request. |
+| `10-02-route-guards` | Protect pages so only logged-in users can see them. |
+| `10-03-role-based-access` | Show or hide UI based on user role (admin, editor, regular user). |
+| `10-04-token-refresh` | Keep user logged in by silently refreshing the token when it expires. |
+| `10-05-social-login` | Sign in with Google / GitHub accounts. |
+| `10-06-password-reset` | Send reset link via email, let user set a new password. |
+| `10-07-user-session-context` | Store the logged-in user data in a global context so any component can access it. |
+
+This version uses plain language and focuses on what each part does in a typical app.
 
 ---
 
-## Module 11: State Management
+**Updated Module 11: State Management**  
+*(Redux Basics and Redux Toolkit broken down into focused, real-world subfolders)*
 
 | Subfolder | Description |
 |-----------|-------------|
-| `11-01-redux-basics` | Redux store, actions, reducers, `connect`. |
-| `11-02-redux-toolkit` | `createSlice`, `configureStore`, `useSelector`, `useDispatch`. |
-| `11-03-rtk-query` | Data fetching with RTK Query. |
-| `11-04-zustand` | Zustand store, selectors, actions. |
-| `11-05-jotai` | Atoms, derived atoms, `useAtom`. |
-| `11-06-recoil` | Recoil atoms, selectors. |
-| `11-07-mobx` | Observables, actions, reactions, `observer`. |
-| `11-08-comparison-context-vs-redux` | When to use Context vs Redux, trade-offs. |
+| `11-01-redux-store-create` | Create a Redux store — the single source of truth for your app state. |
+| `11-02-redux-actions` | Define action types and action creators — what happened in your app. |
+| `11-03-redux-reducers` | Write reducers to update state immutably when actions are dispatched. |
+| `11-04-redux-dispatch` | Dispatch actions from UI events; see how state changes flow through the store. |
+| `11-05-redux-connect` | Use `connect` in class components to map state and dispatch to props. |
+| `11-06-redux-toolkit-setup` | Configure the store with `configureStore` — modern Redux setup with sensible defaults. |
+| `11-07-redux-toolkit-slice` | Use `createSlice` to define reducers and actions in one place — less boilerplate. |
+| `11-08-redux-toolkit-hooks` | Use `useSelector` and `useDispatch` in functional components to read and update state. |
+| `11-09-redux-toolkit-async-thunks` | Handle API calls and async logic with `createAsyncThunk`. |
+| `11-10-rtk-query` | Data fetching and caching built into Redux Toolkit — automatic loading/error states. |
+| `11-11-zustand` | Tiny, fast state library — simple store, no boilerplate. Great for small/medium apps. |
+| `11-12-jotai` | Atomic state — independent pieces of state that compose easily. Good for React-first granular state. |
+| `11-13-recoil` | Facebook's state library using atoms and selectors — less common now, but similar to Jotai. |
+| `11-14-mobx` | Observable-based state — automatic tracking of what changed. Use if you like reactive, non-functional style. |
+| `11-15-context-vs-redux` | When to use built-in Context vs a full state library — compare performance, complexity, and real-world scenarios. |
+
+Now Redux is broken into individual concepts, making it easier to learn step by step and build real projects.
 
 ---
 
@@ -373,3 +456,6 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 ---
 
 This structure ensures **no topic is missed** and provides a hands-on project for every concept, building from zero to full-stack proficiency.
+---
+
+
