@@ -8,9 +8,6 @@ const user="brijesh"
 const css = { color:"red",
     backgroundColor:"blue",
     fontSize:"30px",
-
-
-
  };
  const info={
     class:"mca",
