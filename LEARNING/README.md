@@ -50,20 +50,22 @@ This now includes the three historical/setup approaches at the top, ensuring lea
 |-----------|-------------|
 | `02-00-jsx` | Deep dive into JSX rendering, JS expressions, conditional rendering, attributes, arrays, `.map()`, lists. |
 | `02-01-components-rendering` | Rendering React components, component tree, root component, importing/exporting components. |
-| `02-02-props-to-component` | Passing data to components via props, destructuring props, prop types basics. |
+| `02-02-props-parent-to-child-component` | Passing data to components via props, destructuring props, prop types basics. |
 | `02-03-use-state-hook` | Introduction to `useState` hook, initializing and updating local state. |
-| `02-04-value-child-cmpnt-fun-var-pass-as-props` | Passing values, child components, functions, and variables as props; callback props. |
-| `02-05-conditional-rendering` | Conditional rendering with `if`/`else`, ternary operators, logical `&&`, returning `null`. |
-| `02-06-functional-components` | Deep dive into functional components, default props, props.children. |
-| `02-07-state-basics` | `useState` in depth: batching behavior, functional updates, object/array state. |
-| `02-08-rendering-lists` | Rendering arrays with `.map()`, importance of keys, filtering/sorting lists. |
-| `02-09-fragments` | `React.Fragment`, shorthand `<>`, avoiding extra DOM nodes. |
-| `02-10-composition` | `props.children`, composition vs inheritance, slots pattern. |
-| `02-11-props-validation` | PropTypes, defaultProps, type checking for props. |
+| `02-04-event-handling-basics` | Basic React event handling with `onClick`, `onChange`, `onSubmit`, event handler functions, and events with state. |
+| `02-05-value-child-cmpnt-fun-var-pass-as-props` | Passing values, child components, functions, and variables as props; callback props. |
+| `02-06-conditional-rendering` | Conditional rendering with `if`/`else`, ternary operators, logical `&&`, returning `null`. |
+| `02-07-functional-components` | Deep dive into functional components, default props, props.children. |
+| `02-08-state-basics` | `useState` in depth: batching behavior, functional updates, object/array state. |
+| `02-09-rendering-lists` | Rendering arrays with `.map()`, importance of keys, filtering/sorting lists. |
+| `02-10-fragments` | `React.Fragment`, shorthand `<>`, avoiding extra DOM nodes. |
+| `02-11-composition` | `props.children`, composition vs inheritance, slots pattern. |
+| `02-12-props-validation` | PropTypes, defaultProps, type checking for props. |
 
 ---
 
-This structure now includes the additional topics as separate subfolders, providing a more granular progression from JSX fundamentals to props, state, and rendering concepts.
+This structure now includes basic event handling before advanced prop-passing concepts, providing a granular progression from JSX fundamentals through components, props, state, events, conditional rendering, lists, composition, and props validation.
+
 
 ---
 
@@ -75,7 +77,7 @@ This structure now includes the additional topics as separate subfolders, provid
 | `03-01-event-handling` | Synthetic events, `onClick`, `onChange`, event object basics. |
 | `03-02-event-binding` | Arrow functions in render, binding in class components (brief). |
 | `03-03-passing-arguments` | Passing parameters to event handlers. |
-| `03-04-form-events` | `onSubmit`, `onChange`, controlled vs uncontrolled inputs. |
+| `03-04-form-events-handling` | `onSubmit`, `onChange`, controlled vs uncontrolled inputs. |
 | `03-05-keyboard-mouse-events` | `onKeyDown`, `onKeyUp`, `onMouseEnter`, `onMouseLeave`. |
 | `03-06-refs-basics` | `useRef` for DOM access, reading values, focusing elements. |
 | `03-07-uncontrolled-components` | Using refs to read form values on submit. |
