@@ -17,10 +17,10 @@ fontSize:"40px"
     return (
         <div style={card}>
       <div style={profile}>👤</div>
-      <h2>NAME:{props.name}</h2>
-      <p>AGE:{props.age}</p>
-      <p>COURSE{props.course}</p>
-      <p>COLLEGE{props.college}</p>
+      <h2>NAME:-{props.name}</h2>
+      <p>AGE:-{props.age}</p>
+      <p>COURSE:-{props.course}</p>
+      <p>COLLEGE:-{props.college}</p>
       <button>view profile</button>
       </div>
     
